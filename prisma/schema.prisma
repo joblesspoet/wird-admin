@@ -1,0 +1,124 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// Admin Users (Email/Password Auth)
+// ============================================================================
+
+model AdminUser {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  fullName     String?  @map("full_name")
+  role         String   @default("admin") // admin, viewer
+  isActive     Boolean  @default(true) @map("is_active")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  contentVersions ContentVersion[]
+
+  @@map("admin_users")
+}
+
+// ============================================================================
+// Categories (Multilingual)
+// ============================================================================
+
+model Category {
+  id        String   @id
+  labelEn   String   @map("label_en")
+  labelAr   String?  @map("label_ar")
+  labelUr   String?  @map("label_ur")
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  dhikrs Dhikr[]
+
+  @@map("categories")
+}
+
+// ============================================================================
+// Dhikr/Zikr Content
+// ============================================================================
+
+model Dhikr {
+  id               String    @id
+  arabic           String
+  transliteration  String
+  meaning          String
+  recommendedCount Int       @default(33) @map("recommended_count")
+  category         String // Display name (English)
+  categoryId       String?   @map("category_id")
+  reference        String?
+  description      String?
+  sortOrder        Int       @default(0) @map("sort_order")
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+
+  categoryRel Category? @relation(fields: [categoryId], references: [id])
+
+  @@index([categoryId])
+  @@index([createdAt])
+  @@map("dhikr")
+}
+
+// ============================================================================
+// Content Versioning
+// ============================================================================
+
+model ContentVersion {
+  id            Int      @id @default(autoincrement())
+  version       String   @unique
+  dhikrCount    Int      @map("dhikr_count")
+  categoryCount Int      @map("category_count")
+  changelog     String?
+  publishedAt   DateTime @default(now()) @map("published_at")
+  publishedBy   String?  @map("published_by")
+
+  publisher AdminUser? @relation(fields: [publishedBy], references: [id])
+
+  @@index([publishedAt(sort: Desc)])
+  @@map("content_versions")
+}
+
+// ============================================================================
+// Push Notifications
+// ============================================================================
+
+model PushToken {
+  id         String   @id @default(uuid())
+  token      String   @unique
+  platform   String? // ios, android
+  appVersion String?  @map("app_version")
+  deviceInfo Json?    @map("device_info")
+  createdAt  DateTime @default(now()) @map("created_at")
+  lastActive DateTime @default(now()) @map("last_active")
+
+  @@index([lastActive(sort: Desc)])
+  @@map("push_tokens")
+}
+
+model NotificationLog {
+  id              String   @id @default(uuid())
+  title           String
+  body            String
+  newZikrCount    Int?     @map("new_zikr_count")
+  version         String?
+  recipientsCount Int?     @map("recipients_count")
+  sentAt          DateTime @default(now()) @map("sent_at")
+  sentBy          String?  @map("sent_by")
+  status          String   @default("sent") // sent, failed
+
+  @@index([sentAt(sort: Desc)])
+  @@map("notification_logs")
+}
