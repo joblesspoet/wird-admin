@@ -1,0 +1,1080 @@
+{
+  "version": "1.2",
+  "last_updated": "2026-04-10",
+  "categories": [
+    { "id": "tasbeeh", "label_en": "Tasbeeh", "label_ar": "تسابيح", "label_ur": "تسبیحات" },
+    { "id": "after_salah", "label_en": "After Salah", "label_ar": "بعد الصلاة", "label_ur": "نماز کے بعد" },
+    { "id": "salawat", "label_en": "Salawat", "label_ar": "صلوات", "label_ur": "درود شریف" },
+    { "id": "morning", "label_en": "Morning", "label_ar": "أذكار الصباح", "label_ur": "صبح کے اذکار" },
+    { "id": "evening", "label_en": "Evening", "label_ar": "أذكار المساء", "label_ur": "شام کے اذکار" },
+    { "id": "99_names", "label_en": "99 Names", "label_ar": "أسماء الله الحسنى", "label_ur": "اللہ کے 99 نام" },
+    { "id": "general", "label_en": "General", "label_ar": "عام", "label_ur": "عام" }
+  ],
+  "zikrs": [
+    { 
+      "id": "subhanallah", 
+      "arabic": "سُبْحَانَ اللّٰه", 
+      "transliteration": "SubhanAllah", 
+      "meaning": "Glory be to Allah", 
+      "recommended_count": 33, 
+      "category_id": "tasbeeh",
+      "category": "Tasbeeh",
+      "reference": "Sahih Muslim", 
+      "description": "One who recites this 100 times a day will have 1,000 good deeds recorded and 1,000 sins wiped away."
+    },
+    { 
+      "id": "alhamdulillah", 
+      "arabic": "الْحَمْدُ لِلَّه", 
+      "transliteration": "Alhamdulillah", 
+      "meaning": "All praise is for Allah", 
+      "recommended_count": 33, 
+      "category_id": "tasbeeh",
+      "category": "Tasbeeh", 
+      "reference": "Al-Quran" 
+    },
+    { 
+      "id": "allahuakbar", 
+      "arabic": "اللّٰهُ أَكْبَر", 
+      "transliteration": "Allahu Akbar", 
+      "meaning": "Allah is the Greatest", 
+      "recommended_count": 33, 
+      "category_id": "tasbeeh",
+      "category": "Tasbeeh", 
+      "reference": "Al-Quran" 
+    },
+    { 
+      "id": "astaghfirullah", 
+      "arabic": "أَسْتَغْفِرُ اللّٰه", 
+      "transliteration": "Astaghfirullah", 
+      "meaning": "I seek forgiveness from Allah", 
+      "recommended_count": 100, 
+      "category_id": "tasbeeh",
+      "category": "Tasbeeh", 
+      "reference": "Al-Quran" 
+    },
+    { 
+      "id": "lailahaillallah", 
+      "arabic": "لَا إِلَٰهَ إِلَّا اللّٰه", 
+      "transliteration": "La ilaha illallah", 
+      "meaning": "There is no god but Allah", 
+      "recommended_count": 100, 
+      "category_id": "tasbeeh",
+      "category": "Tasbeeh", 
+      "reference": "Sahih Bukhari" 
+    },
+    { 
+      "id": "lahawla", 
+      "arabic": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰه", 
+      "transliteration": "La hawla wala quwwata illa billah", 
+      "meaning": "There is no power except with Allah", 
+      "recommended_count": 100, 
+      "category_id": "tasbeeh",
+      "category": "Tasbeeh", 
+      "reference": "Sahih Bukhari", 
+      "description": "This is a treasure from the treasures of Paradise." 
+    },
+    { 
+      "id": "astaghfirullah-3x", 
+      "arabic": "أَسْتَغْفِرُ اللهَ", 
+      "transliteration": "Astaghfirullah", 
+      "meaning": "I seek forgiveness from Allah (Recite 3x)", 
+      "recommended_count": 3, 
+      "category_id": "after_salah",
+      "category": "After Salah", 
+      "reference": "Sahih Muslim" 
+    },
+    { 
+      "id": "allahumma-intas-salam", 
+      "arabic": "اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالإِكْرَامِ", 
+      "transliteration": "Allahumma Antas Salam...", 
+      "meaning": "O Allah, You are Peace and from You comes peace", 
+      "recommended_count": 1, 
+      "category_id": "after_salah",
+      "category": "After Salah", 
+      "reference": "Sahih Muslim" 
+    },
+    { 
+      "id": "la-ilaha-wahdahu", 
+      "arabic": "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِیکَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى کُلِّ شَیْءٍ قَدِیرٌ", 
+      "transliteration": "La ilaha illallah...", 
+      "meaning": "None has the right to be worshipped but Allah Alone", 
+      "recommended_count": 1, 
+      "category_id": "after_salah",
+      "category": "After Salah", 
+      "reference": "Sahih Bukhari" 
+    },
+    { 
+      "id": "ayatul-kursi-salah", 
+      "arabic": "اللَّهُ لاَ إِلَهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ...", 
+      "transliteration": "Ayatul Kursi", 
+      "meaning": "Recite silently after every obligatory prayer", 
+      "recommended_count": 1, 
+      "category_id": "after_salah",
+      "category": "After Salah", 
+      "reference": "Nasai", 
+      "description": "Whoever recites this after every prayer, nothing but death prevents him from entering Paradise." 
+    },
+    { 
+      "id": "allahumma-ainni", 
+      "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ", 
+      "transliteration": "Allahumma a'inni ala dhikrika...", 
+      "meaning": "O Allah, help me to remember You and thank You", 
+      "recommended_count": 1, 
+      "category_id": "after_salah",
+      "category": "After Salah", 
+      "reference": "Abu Dawud" 
+    },
+    { 
+      "id": "subhan-alhamd-allah-33", 
+      "arabic": "تسبیح فاطمہ (33x)", 
+      "transliteration": "Tasbih Fatimah", 
+      "meaning": "SubhanAllah (33x), Alhamdulillah (33x), Allahu Akbar (34x)", 
+      "recommended_count": 100, 
+      "category_id": "after_salah",
+      "category": "After Salah", 
+      "reference": "Sahih Bukhari" 
+    },
+    { 
+      "id": "salawat", 
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّد", 
+      "transliteration": "Allahumma Salli ala Muhammad", 
+      "meaning": "O Allah, send blessings upon Muhammad", 
+      "recommended_count": 100, 
+      "category_id": "salawat",
+      "category": "Salawat", 
+      "reference": "Al-Quran" 
+    },
+    { 
+      "id": "bismillah", 
+      "arabic": "بِسْمِ اللّٰه", 
+      "transliteration": "Bismillah", 
+      "meaning": "In the name of Allah", 
+      "recommended_count": 0, 
+      "category_id": "general",
+      "category": "General", 
+      "reference": "Al-Quran" 
+    },
+    { 
+      "id": "hasbiyallah", 
+      "arabic": "حَسْبِيَ اللّٰهُ وَنِعْمَ الْوَكِيل", 
+      "transliteration": "Hasbiyallahu wa ni'mal wakeel", 
+      "meaning": "Allah is sufficient for me and the best guardian", 
+      "recommended_count": 0, 
+      "category_id": "morning",
+      "category": "Morning", 
+      "reference": "Al-Quran" 
+    },
+    
+    { 
+      "id": "subhanakallahumma", 
+      "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ", 
+      "transliteration": "SubhanakallaHumma wa bihamdika", 
+      "meaning": "Glory be to You O Allah, and Your praise", 
+      "recommended_count": 3, 
+      "category_id": "general",
+      "category": "General", 
+      "reference": "Abu Dawud" 
+    },
+    { 
+      "id": "dua-masura", 
+      "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً", 
+      "transliteration": "Rabbana atina fid-dunya hasanatan", 
+      "meaning": "Our Lord, give us good in this world and the next", 
+      "recommended_count": 3, 
+      "category_id": "general",
+      "category": "General", 
+      "reference": "Al-Quran" 
+    },
+    {
+    "id": "ar-rahman",
+    "arabic": "الرَّحْمَنُ",
+    "transliteration": "Ar-Rahman",
+    "meaning": "The Most Gracious",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ar-rahim",
+    "arabic": "الرَّحِيمُ",
+    "transliteration": "Ar-Rahim",
+    "meaning": "The Most Merciful",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-malik",
+    "arabic": "الْمَلِكُ",
+    "transliteration": "Al-Malik",
+    "meaning": "The King",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-quddus",
+    "arabic": "الْقُدُّوسُ",
+    "transliteration": "Al-Quddus",
+    "meaning": "The Most Holy",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "as-salam",
+    "arabic": "السَّلاَمُ",
+    "transliteration": "As-Salam",
+    "meaning": "The Source of Peace",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mumin",
+    "arabic": "الْمُؤْمِنُ",
+    "transliteration": "Al-Mu'min",
+    "meaning": "The Guardian of Faith",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muhaymin",
+    "arabic": "الْمُهَيْمِنُ",
+    "transliteration": "Al-Muhaymin",
+    "meaning": "The Protector",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-aziz",
+    "arabic": "الْعَزِيزُ",
+    "transliteration": "Al-Aziz",
+    "meaning": "The Almighty",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-jabbar",
+    "arabic": "الْجَبَّارُ",
+    "transliteration": "Al-Jabbar",
+    "meaning": "The Compeller",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mutakabbir",
+    "arabic": "الْمُتَكَبِّرُ",
+    "transliteration": "Al-Mutakabbir",
+    "meaning": "The Majestic",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-khaliq",
+    "arabic": "الْخَالِقُ",
+    "transliteration": "Al-Khaliq",
+    "meaning": "The Creator",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-bari",
+    "arabic": "الْبَارِئُ",
+    "transliteration": "Al-Bari",
+    "meaning": "The Evolver",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-musawwir",
+    "arabic": "الْمُصَوِّرُ",
+    "transliteration": "Al-Musawwir",
+    "meaning": "The Fashioner",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-gaffar",
+    "arabic": "الْغَفَّارُ",
+    "transliteration": "Al-Ghaffar",
+    "meaning": "The Ever-Forgiving",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-qahhar",
+    "arabic": "الْقَهَّارُ",
+    "transliteration": "Al-Qahhar",
+    "meaning": "The Subduer",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wahhab",
+    "arabic": "الْوَهَّابُ",
+    "transliteration": "Al-Wahhab",
+    "meaning": "The Bestower",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ar-razzaq",
+    "arabic": "الرَّزَّاقُ",
+    "transliteration": "Ar-Razzaq",
+    "meaning": "The Provider",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-fattah",
+    "arabic": "الْفَتَّاحُ",
+    "transliteration": "Al-Fattah",
+    "meaning": "The Opener",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-alim",
+    "arabic": "الْعَلِيمُ",
+    "transliteration": "Al-Alim",
+    "meaning": "The All-Knowing",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-qabid",
+    "arabic": "الْقَابِضُ",
+    "transliteration": "Al-Qabid",
+    "meaning": "The Withholder",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-basit",
+    "arabic": "الْبَاسِطُ",
+    "transliteration": "Al-Basit",
+    "meaning": "The Expander",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-khafid",
+    "arabic": "الْخَافِضُ",
+    "transliteration": "Al-Khafid",
+    "meaning": "The Abaser",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ar-rafi",
+    "arabic": "الرَّافِعُ",
+    "transliteration": "Ar-Rafi",
+    "meaning": "The Exalter",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muizz",
+    "arabic": "الْمُعِزُّ",
+    "transliteration": "Al-Muizz",
+    "meaning": "The Giver of Honour",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mudhill",
+    "arabic": "الْمُذِلُّ",
+    "transliteration": "Al-Mudhill",
+    "meaning": "The Giver of Dishonour",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "as-sami",
+    "arabic": "السَّمِيعُ",
+    "transliteration": "As-Sami",
+    "meaning": "The All-Hearing",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-basir",
+    "arabic": "الْبَصِيرُ",
+    "transliteration": "Al-Basir",
+    "meaning": "The All-Seeing",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hakam",
+    "arabic": "الْحَكَمُ",
+    "transliteration": "Al-Hakam",
+    "meaning": "The Judge",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-adl",
+    "arabic": "الْعَدْلُ",
+    "transliteration": "Al-Adl",
+    "meaning": "The Just",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-latif",
+    "arabic": "اللَّطِيفُ",
+    "transliteration": "Al-Latif",
+    "meaning": "The Subtle One",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-khabir",
+    "arabic": "الْخَبِيرُ",
+    "transliteration": "Al-Khabir",
+    "meaning": "The All-Aware",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-halim",
+    "arabic": "الْحَلِيمُ",
+    "transliteration": "Al-Halim",
+    "meaning": "The Forbearing",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-azim",
+    "arabic": "الْعَظِيمُ",
+    "transliteration": "Al-Azim",
+    "meaning": "The Magnificent",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-ghafur",
+    "arabic": "الْغَفُورُ",
+    "transliteration": "Al-Ghafur",
+    "meaning": "The Forgiver",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ash-shakur",
+    "arabic": "الشَّكُورُ",
+    "transliteration": "Ash-Shakur",
+    "meaning": "The Appreciative",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-ali",
+    "arabic": "الْعَلِيُّ",
+    "transliteration": "Al-Ali",
+    "meaning": "The Most High",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-kabir",
+    "arabic": "الْكَبِيرُ",
+    "transliteration": "Al-Kabir",
+    "meaning": "The Most Great",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hafiz",
+    "arabic": "الْحَفِيظُ",
+    "transliteration": "Al-Hafiz",
+    "meaning": "The Preserver",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muqit",
+    "arabic": "الْمُقِيتُ",
+    "transliteration": "Al-Muqit",
+    "meaning": "The Sustainer",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hasib",
+    "arabic": "الْحَسِيبُ",
+    "transliteration": "Al-Hasib",
+    "meaning": "The Reckoner",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-jalil",
+    "arabic": "الْجَلِيلُ",
+    "transliteration": "Al-Jalil",
+    "meaning": "The Majestic",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-karim",
+    "arabic": "الْكَرِيمُ",
+    "transliteration": "Al-Karim",
+    "meaning": "The Generous",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ar-raqib",
+    "arabic": "الرَّقِيبُ",
+    "transliteration": "Ar-Raqib",
+    "meaning": "The Watchful",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mujib",
+    "arabic": "الْمُجِيبُ",
+    "transliteration": "Al-Mujib",
+    "meaning": "The Responsive",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wasi",
+    "arabic": "الْوَاسِعُ",
+    "transliteration": "Al-Wasi",
+    "meaning": "The All-Encompassing",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hakim",
+    "arabic": "الْحَكِيمُ",
+    "transliteration": "Al-Hakim",
+    "meaning": "The Wise",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wadud",
+    "arabic": "الْوَدُودُ",
+    "transliteration": "Al-Wadud",
+    "meaning": "The Loving",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-majeed",
+    "arabic": "الْمَجِيدُ",
+    "transliteration": "Al-Majeed",
+    "meaning": "The Glorious",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-baith",
+    "arabic": "الْبَاعِثُ",
+    "transliteration": "Al-Baith",
+    "meaning": "The Resurrector",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ash-shahid",
+    "arabic": "الشَّهِيدُ",
+    "transliteration": "Ash-Shahid",
+    "meaning": "The Witness",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-haqq",
+    "arabic": "الْحَقُّ",
+    "transliteration": "Al-Haqq",
+    "meaning": "The Truth",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wakil",
+    "arabic": "الْوَكِيلُ",
+    "transliteration": "Al-Wakil",
+    "meaning": "The Trustee",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-qawiyy",
+    "arabic": "الْقَوِيُّ",
+    "transliteration": "Al-Qawiyy",
+    "meaning": "The Strong",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-matin",
+    "arabic": "الْمَتِينُ",
+    "transliteration": "Al-Matin",
+    "meaning": "The Firm",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-waliyy",
+    "arabic": "الْوَلِيُّ",
+    "transliteration": "Al-Waliyy",
+    "meaning": "The Protecting Friend",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hamid",
+    "arabic": "الْحَمِيدُ",
+    "transliteration": "Al-Hamid",
+    "meaning": "The Praiseworthy",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muhsi",
+    "arabic": "الْمُحْصِي",
+    "transliteration": "Al-Muhsi",
+    "meaning": "The Accounter",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mubdi",
+    "arabic": "الْمُبْدِئُ",
+    "transliteration": "Al-Mubdi",
+    "meaning": "The Originator",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muid",
+    "arabic": "الْمُعِيدُ",
+    "transliteration": "Al-Muid",
+    "meaning": "The Restorer",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muhyi",
+    "arabic": "الْمُحْيِي",
+    "transliteration": "Al-Muhyi",
+    "meaning": "The Giver of Life",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mumit",
+    "arabic": "الْمُمِيتُ",
+    "transliteration": "Al-Mumit",
+    "meaning": "The Bringer of Death",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hayy",
+    "arabic": "الْحَيُّ",
+    "transliteration": "Al-Hayy",
+    "meaning": "The Ever-Living",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-qayyum",
+    "arabic": "الْقَيُّومُ",
+    "transliteration": "Al-Qayyum",
+    "meaning": "The Self-Subsisting",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wajid",
+    "arabic": "الْوَاجِدُ",
+    "transliteration": "Al-Wajid",
+    "meaning": "The Finder",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-majid",
+    "arabic": "الْمَاجِدُ",
+    "transliteration": "Al-Majid",
+    "meaning": "The Noble",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wahid",
+    "arabic": "الْوَاحِدُ",
+    "transliteration": "Al-Wahid",
+    "meaning": "The One",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-ahad",
+    "arabic": "الْأَحَد",
+    "transliteration": "Al-Ahad",
+    "meaning": "The Absolute One",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "as-samad",
+    "arabic": "الصَّمَدُ",
+    "transliteration": "As-Samad",
+    "meaning": "The Eternal",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-qadir",
+    "arabic": "الْقَادِرُ",
+    "transliteration": "Al-Qadir",
+    "meaning": "The Capable",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muqtadir",
+    "arabic": "الْمُقْتَدِرُ",
+    "transliteration": "Al-Muqtadir",
+    "meaning": "The Powerful",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muqaddim",
+    "arabic": "الْمُقَدِّمُ",
+    "transliteration": "Al-Muqaddim",
+    "meaning": "The Expediter",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muakhkhir",
+    "arabic": "الْمُؤَخِّرُ",
+    "transliteration": "Al-Muakhkhir",
+    "meaning": "The Delayer",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-awwal",
+    "arabic": "الْأَوَّلُ",
+    "transliteration": "Al-Awwal",
+    "meaning": "The First",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-akhir",
+    "arabic": "الْآخِرُ",
+    "transliteration": "Al-Akhir",
+    "meaning": "The Last",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "az-zahir",
+    "arabic": "الظَّاهِرُ",
+    "transliteration": "Az-Zahir",
+    "meaning": "The Manifest",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-batin",
+    "arabic": "الْبَاطِنُ",
+    "transliteration": "Al-Batin",
+    "meaning": "The Hidden",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-wali",
+    "arabic": "الْوَالِي",
+    "transliteration": "Al-Wali",
+    "meaning": "The Governor",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mutaali",
+    "arabic": "الْمُتَعَالِي",
+    "transliteration": "Al-Mutaali",
+    "meaning": "The Most Exalted",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-barr",
+    "arabic": "الْبَرُّ",
+    "transliteration": "Al-Barr",
+    "meaning": "The Source of Goodness",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "at-tawwab",
+    "arabic": "التَّوَّابُ",
+    "transliteration": "At-Tawwab",
+    "meaning": "The Acceptor of Repentance",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muntaqim",
+    "arabic": "الْمُنْتَقِمُ",
+    "transliteration": "Al-Muntaqim",
+    "meaning": "The Avenger",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-afuww",
+    "arabic": "الْعَفُوُّ",
+    "transliteration": "Al-Afuww",
+    "meaning": "The Pardoner",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ar-rauf",
+    "arabic": "الرَّؤُوفُ",
+    "transliteration": "Ar-Rauf",
+    "meaning": "The Most Kind",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "malik-ul-mulk",
+    "arabic": "مَالِكُ الْمُلْكِ",
+    "transliteration": "Malik-ul-Mulk",
+    "meaning": "Master of the Kingdom",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "dhul-jalali-wal-ikram",
+    "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
+    "transliteration": "Dhul-Jalali wal-Ikram",
+    "meaning": "Lord of Majesty and Generosity",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-muqsit",
+    "arabic": "الْمُقْسِطُ",
+    "transliteration": "Al-Muqsit",
+    "meaning": "The Equitable",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-jami",
+    "arabic": "الْجَامِعُ",
+    "transliteration": "Al-Jami",
+    "meaning": "The Gatherer",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-ghaniyy",
+    "arabic": "الْغَنِيُّ",
+    "transliteration": "Al-Ghaniyy",
+    "meaning": "The Self-Sufficient",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mughni",
+    "arabic": "الْمُغْنِي",
+    "transliteration": "Al-Mughni",
+    "meaning": "The Enricher",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-mani",
+    "arabic": "الْمَانِعُ",
+    "transliteration": "Al-Mani",
+    "meaning": "The Preventer",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ad-darr",
+    "arabic": "الضَّارُّ",
+    "transliteration": "Ad-Darr",
+    "meaning": "The Distresser",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "an-nafi",
+    "arabic": "النَّافِعُ",
+    "transliteration": "An-Nafi",
+    "meaning": "The Propitious",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "an-nur",
+    "arabic": "النُّورُ",
+    "transliteration": "An-Nur",
+    "meaning": "The Light",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-hadi",
+    "arabic": "الْهَادِي",
+    "transliteration": "Al-Hadi",
+    "meaning": "The Guide",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-badi",
+    "arabic": "الْبَدِيعُ",
+    "transliteration": "Al-Badi",
+    "meaning": "The Incomparable",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-baqi",
+    "arabic": "الْبَاقِي",
+    "transliteration": "Al-Baqi",
+    "meaning": "The Everlasting",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "al-warith",
+    "arabic": "الْوَارِثُ",
+    "transliteration": "Al-Warith",
+    "meaning": "The Inheritor",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "ar-rashid",
+    "arabic": "الرَّشِيدُ",
+    "transliteration": "Ar-Rashid",
+    "meaning": "The Guide to the Right Path",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  },
+  {
+    "id": "as-sabur",
+    "arabic": "الصَّبُورُ",
+    "transliteration": "As-Sabur",
+    "meaning": "The Patient",
+    "recommended_count": 100,
+    "category": "99_names",
+    "reference": "Al-Quran"
+  }
+  ]
+}
