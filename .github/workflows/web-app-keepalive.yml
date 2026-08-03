@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Ping Supabase
         run: |
-          curl -X GET "https://wird-admin-app.vercel.app/api/tokens" \
+          curl -X GET "https://hsxwptgaefpoxfrcmvvo.supabase.co/rest/v1/dhikr?select=id&limit=1" \
           -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
           -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
