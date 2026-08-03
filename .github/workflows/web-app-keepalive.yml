@@ -2,15 +2,32 @@ name: Keep Supabase Alive
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # runs every day at midnight UTC
-  workflow_dispatch: {}    # Allow manual trigger
+    - cron: '0 0 * * *'  # Every day at midnight UTC
+  workflow_dispatch:        # Allow manual trigger
 
 jobs:
-  ping:
+  keep-alive:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping Supabase
+      - name: Ping Vercel + Supabase via data API
         run: |
-          curl -X GET "https://hsxwptgaefpoxfrcmvvo.supabase.co/rest/v1/dhikr?select=id&limit=1" \
-          -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
-          -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
+          RESPONSE=$(curl -sL -w "\n%{http_code}" "https://wird-admin-app.vercel.app/api/data")
+          STATUS=$(echo "$RESPONSE" | tail -1)
+          echo "HTTP: $STATUS"
+          if [ "$STATUS" != "200" ]; then
+            echo "ERROR: API returned $STATUS"
+            exit 1
+          fi
+          echo "Supabase is alive ✓"
+
+      - name: Ping Supabase REST directly
+        run: |
+          STATUS=$(curl -sL -o /dev/null -w "%{http_code}" \
+            "https://hsxwptgaefpoxfrcmvvo.supabase.co/rest/v1/dhikr?select=id&limit=1" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}")
+          echo "Supabase REST: HTTP $STATUS"
+          if [ "$STATUS" != "200" ]; then
+            echo "ERROR: Supabase REST returned $STATUS"
+            exit 1
+          fi
